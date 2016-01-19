@@ -1,4 +1,4 @@
-# yii2-redis-mutex
+# Yii2 redis mutex
 
 [![Build Status](https://travis-ci.org/pastuhov/yii2-redis-mutex.svg)](https://travis-ci.org/pastuhov/yii2-redis-mutex)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/pastuhov/yii2-redis-mutex/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/pastuhov/yii2-redis-mutex/?branch=master)
@@ -17,7 +17,12 @@ $ composer require pastuhov/yii2-redis-mutex
 
 ## Features
 
-* 
+* Deadlock free
+* Robust
+
+## Disadvantages
+* no spinlock
+* non distributed
 
 ## Usage
 
