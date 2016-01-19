@@ -5,8 +5,6 @@
 [![Code Coverage](https://scrutinizer-ci.com/g/pastuhov/yii2-redis-mutex/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/pastuhov/yii2-redis-mutex/?branch=master)
 [![Total Downloads](https://poser.pugx.org/pastuhov/yii2-redis-mutex/downloads)](https://packagist.org/packages/pastuhov/yii2-redis-mutex)
 
-Under development
-
 ## Install
 
 Via Composer
