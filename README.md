@@ -24,7 +24,6 @@ $ composer require pastuhov/yii2-redis-mutex
 
 ## Usage
 
-Configure the [[yii\base\Application::controllerMap|controller map]] in the application configuration. For example:
 ```php
 $mutex = \Yii::createObject([
 	'class' => \pastuhov\yii2redismutex\RedisMutex::className(),
