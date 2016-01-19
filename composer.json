@@ -1,6 +1,6 @@
 {
   "name": "pastuhov/yii2-redis-mutex",
-  "description": "YML (Yandex Market Language) generator.",
+  "description": "Yii2 Redis mutex.",
   "keywords": [
     "redis",
     "mutex",
