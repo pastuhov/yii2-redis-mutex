@@ -23,9 +23,17 @@ $ composer require pastuhov/yii2-redis-mutex
 
 Configure the [[yii\base\Application::controllerMap|controller map]] in the application configuration. For example:
 ```php
-[
-
-]
+        $mutex = \Yii::createObject([
+            'class' => \pastuhov\yii2redismutex\RedisMutex::className(),
+            'redis' => $redisConnection
+        ]);
+        
+        $mutexName = 'lock';
+        
+        if ($mutex->acquire($mutexName)) {
+        	$value++;
+        	$mutex->release($mutexName);
+        }
 ```
 
 ## Testing
@@ -36,6 +44,19 @@ $ composer test
 or
 ```bash
 $ phpunit
+```
+
+## Debugging
+
+For debugging purposes use:
+
+```bash
+$ redis-cli monitor
+```
+or 
+
+```bash
+$ tail -f tests/runtime/logs/app.log -n 1000
 ```
 
 ## Security

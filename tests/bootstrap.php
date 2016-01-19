@@ -15,4 +15,15 @@ Yii::setAlias('@tests', __DIR__);
 new \yii\console\Application([
     'id' => 'unit',
     'basePath' => __DIR__,
+    'bootstrap' => ['log'],
+    'components' => [
+        'log' => [
+            'targets' => [
+                [
+                    'class' => 'yii\log\FileTarget',
+
+                ]
+            ],
+        ],
+    ],
 ]);
