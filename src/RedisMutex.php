@@ -94,7 +94,7 @@ class RedisMutex extends Mutex
             $lockValue // Key value
         ];
 
-        $redis->executeCommand('EVAL', $params);
+        return (bool)$redis->executeCommand('EVAL', $params);
     }
 
     /**
